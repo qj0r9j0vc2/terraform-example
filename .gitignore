@@ -1,0 +1,10 @@
+
+.idea/
+
+ecs-example/.terraform.lock.hcl
+
+ecs-example/.terraform/
+
+ecs-example/.terraform.tfstate.lock.info
+
+ecs-example/terraform.tfstate
