@@ -76,6 +76,12 @@ resource "aws_internet_gateway" "example-igw" {
 //EIP
 resource "aws_eip" "example-eip" {
   vpc = true
+  lifecycle {
+    create_before_destroy = true
+  }
+  tags = {
+    Name = "example-eip"
+  }
 }
 
 //NAT Gateway

@@ -8,3 +8,11 @@ ecs-example/.terraform/
 ecs-example/.terraform.tfstate.lock.info
 
 ecs-example/terraform.tfstate
+
+vpc-example/.terraform/
+
+vpc-example/.terraform.lock.hcl
+
+ecs-example/terraform.tfstate.backup
+
+vpc-example/terraform.tfstate
