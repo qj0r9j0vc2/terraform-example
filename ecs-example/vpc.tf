@@ -167,3 +167,30 @@ resource "aws_route" "example-rt-privateB-route-1" {
   destination_cidr_block = "0.0.0.0/0"
   nat_gateway_id = aws_nat_gateway.example-ngw.id
 }
+
+
+//SecurityGroup for SSH
+resource "aws_security_group" "example-sg-ssh" {
+  name = "example-sg-ssh"
+  description = "Allow 22 port for SSH"
+  vpc_id = aws_vpc.example-vpc.id
+  ingress {
+    from_port = 22
+    to_port   = 22
+    protocol  = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+//SecurityGroup for HTTP
+resource "aws_security_group" "example-sg-http" {
+  name = "example-sg-http"
+  description = "Allow 80 port for HTTP"
+  vpc_id = aws_vpc.example-vpc.id
+  ingress {
+    from_port = 80
+    to_port   = 80
+    protocol  = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
