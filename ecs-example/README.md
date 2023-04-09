@@ -3,10 +3,7 @@
 ---
 example terraform script for ecs(contains vpc, ecr, ecs, alb).
 
-<<<<<<< Updated upstream
 ![ECS-example](https://user-images.githubusercontent.com/59428479/230790195-d8651962-21da-4580-9e02-045040d6cedd.png)
-=======
->>>>>>> Stashed changes
 
 
 # How to get started
