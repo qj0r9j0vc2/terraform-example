@@ -3,6 +3,8 @@
 ---
 example terraform script for ecs(contains vpc, ecr, ecs, alb).
 
+![](../../../../Downloads/ECS-example.png)
+
 # How to get started
 > terraform init 
 
