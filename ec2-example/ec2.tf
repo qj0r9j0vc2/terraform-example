@@ -12,6 +12,7 @@ resource "aws_instance" "example-ec2" {
     aws_default_security_group.default.id
   ]
   key_name = "example-key-pair"
+  associate_public_ip_address = true
 
   tags = {
     Name = "example-ec2"

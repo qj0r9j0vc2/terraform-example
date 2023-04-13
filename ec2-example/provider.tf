@@ -4,6 +4,10 @@ output "account_id" {
   value = data.aws_caller_identity.current.account_id
 }
 
+output "instance_ipv4" {
+  value = "command: ssh ubuntu@${aws_instance.example-ec2.public_ip}"
+}
+
 variable "aws_access_key" {
   type = string
 }
