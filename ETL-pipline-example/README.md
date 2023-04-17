@@ -2,6 +2,7 @@
 # ECS-example
 ---
 example terraform script for ETL pipeline.
+![ETL pipeline](https://user-images.githubusercontent.com/59428479/232498037-b5c24fc4-a744-4a63-95bf-50e4a442d76a.png)
 
 # How to get started
 
