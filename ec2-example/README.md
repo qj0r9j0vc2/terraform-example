@@ -4,6 +4,8 @@
  simpel terraform script for EC2.
 
  It creates a VPC and EC2 instance with only a public subnet.
+ 
+ You can add your private EC2 on private subnets and use public EC2 as bastion server
 
 ![EC2](https://user-images.githubusercontent.com/59428479/232494715-df8a6cb8-5f12-405f-9bb0-846453489d0b.png)
 
