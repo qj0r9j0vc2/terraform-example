@@ -26,7 +26,7 @@ resource "aws_ecs_task_definition" "example-task" {
 }
 
 
-resource "aws_ecs_service" "example" {
+resource "aws_ecs_service" "example-service" {
   name            = "example-service"
   cluster         = aws_ecs_cluster.example-cluster.id
   task_definition = aws_ecs_task_definition.example-task.arn
