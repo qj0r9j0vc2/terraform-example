@@ -4,6 +4,10 @@ output "account_id" {
   value = data.aws_caller_identity.current.account_id
 }
 
+output "alb-url" {
+  value = aws_lb.example-alb.dns_name
+}
+
 variable "aws_access_key" {
   type = string
 }

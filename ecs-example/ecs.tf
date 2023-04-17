@@ -39,6 +39,12 @@ resource "aws_ecs_service" "example-service" {
     subnets         = [aws_subnet.example-subnet-privateA.id, aws_subnet.example-subnet-privateB.id]
     assign_public_ip = false
   }
+
+  load_balancer {
+    target_group_arn = aws_alb_target_group.example-tg.arn
+    container_name   = "nginx"
+    container_port   = 8080
+  }
 }
 
 //IAM role
