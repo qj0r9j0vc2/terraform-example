@@ -16,3 +16,13 @@ vpc-example/.terraform.lock.hcl
 ecs-example/terraform.tfstate.backup
 
 vpc-example/terraform.tfstate
+
+ETL-pipline-example/.terraform/
+
+ETL-pipline-example/.terraform.lock.hcl
+
+.DS_Store
+
+main/
+
+.vscode/
