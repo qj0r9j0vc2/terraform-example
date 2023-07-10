@@ -21,7 +21,7 @@ provider "aws" {
 }
 
 module "ec2" {
-  source = "github.com/qj0r9j0vc2/terraform-example/ec2-example"
+  source = "github.com/qj0r9j0vc2/terraform-example/ec2-module"
   //instance_type = "t3.large"
   //public_key_path = "~/Desktop/test.pub"
   //ami_name = "amzn2-ami-hvm*"
