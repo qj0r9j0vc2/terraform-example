@@ -1,6 +1,6 @@
 resource "aws_key_pair" "example-key" {
   key_name   = "example-key"
-  public_key = file(var.private_key_path)
+  public_key = file(var.public_key_path)
 }
 
 resource "aws_security_group" "default" {
@@ -27,7 +27,7 @@ resource "aws_security_group" "example-sg-22" {
 resource "aws_instance" "example-ec2" {
   depends_on = [aws_default_vpc.default]
 
-  ami           = data.aws_ami.ubuntu.id
+  ami           = data.aws_ami.ami.id
   instance_type = var.instance_type
 
   vpc_security_group_ids = [

@@ -11,6 +11,20 @@
 
 
 # How to get started
-> terraform init 
 
-> terraform apply -var aws_access_key=$AWS_ADMIN_ACCESS_KEY -var aws_secret_key=$AWS_ADMIN_SECRET_KEY
+## main.tf
+```
+provider "aws" {
+  access_key = "XXXXXXXXXXXXXXXXXXXX"
+  secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  region     = "ap-northeast-2"
+}
+
+module "ec2" {
+  source = "github.com/qj0r9j0vc2/terraform-example/ec2-example"
+  //instance_type = "t3.large"
+  //public_key_path = "~/Desktop/test.pub"
+  //ami_name = "amzn2-ami-hvm*"
+}
+
+```
